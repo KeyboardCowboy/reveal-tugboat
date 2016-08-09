@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pragmatic Site Building</title>
+    <meta name="description" content="Presentation Description">
+    <meta name="author" content="KeyboardCowboy (Chris Albrecht), chris@lullabot.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Intro-->
+        <section>
+          <header class="slide-header"></header>
+          <section>
+            <h1>Pragmatic Site Building</h1>
+            <hr>
+            <h2>With Panels</h2>
+          </section>
+          <section>
+            <h1><img data-src="images/lullabot_128.png" class="plain">Lullabot</h1><img data-src="images/lullabot.jpg">
+            <p class="fragment fade-in">Strategy // Design // Development</p><small class="fragment fade-in">We create digital experiences for the world's best brands.</small>
+          </section>
+          <section>
+            <h1>Chris Albrecht</h1><small class="highlight">Developer</small>
+            <hr>
+            <ul class="none">
+              <li><img src="images/icons/SVG/mail.svg" class="icon">chris@lullabot.com</li>
+              <li><img src="images/icons/SVG/twitter.svg" class="icon">@ChrisAlbrecht</li>
+              <li><img src="images/icons/SVG/drupal.svg" class="icon">drupal.org/u/KeyboardCowboy</li>
+            </ul>
+          </section>
+        </section>
+        <!-- Overview-->
+        <section>
+          <header class="slide-header">Overview</header>
+          <section>
+            <h1>Concept</h1>
+            <p>Use One Method per Task</p>
+          </section>
+          <section>
+            <h1>Create a Page</h1>
+            <ul class="fragment">
+              <li>Node View</li>
+              <li>Views Page Display</li>
+              <li>Panels Page</li>
+              <li>Custom Menu Callback</li>
+            </ul>
+          </section>
+          <section>
+            <h1>With Panels</h1>
+            <ul>
+              <li class="fragment">All Pages in One Interface</li>
+              <li class="fragment">Contextual Information</li>
+              <li class="fragment">Access Control</li>
+              <li class="fragment">Complex Relationships</li>
+              <li class="fragment">Reusable Layouts</li>
+              <li class="fragment">Large Family of Modules</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Take Aways</h1>
+            <ul>
+              <li class="fragment">Method for Architecting Your Site</li>
+              <li class="fragment">Understanding of the Panels Family</li>
+              <li class="fragment">Views Content Panes</li>
+              <li class="fragment">Custom Layouts</li>
+              <li class="fragment">Panels IPE</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Extras</h1>
+            <ul>
+              <li class="fragment">Beans</li>
+              <li class="fragment">Panelizer</li>
+              <li class="fragment">Fieldable Panels Panes</li>
+              <li class="fragment">Tips & Tricks</li>
+            </ul>
+          </section>
+        </section>
+        <!-- Local setup-->
+        <section>
+          <header class="slide-header">Local Install</header>
+          <section>
+            <h1>Local Server</h1>
+            <ul>
+              <li>MAMP</li>
+              <li>XAMPP</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Create a DB</h1>
+          </section>
+          <section>
+            <h1>Download &amp; Install Drupal</h1>
+          </section>
+        </section>
+        <!-- Install Modules-->
+        <section>
+          <header class="slide-header">Modules</header>
+          <section>
+            <h1>Drush</h1>
+            <ul>
+              <li>Composer</li>
+              <li>https://github.com/drush-ops/drush/releases</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Admin Menu</h1>
+            <pre><code data-trim>$ drush dl admin_menu
+$ drush en admin_menu</code></pre>
+          </section>
+          <section>
+            <h1>KC Panels Demo</h1>
+            <pre><code data-trim>$ drush dl kcpd
+$ drush en kcpd
+</code></pre>
+          </section>
+        </section>
+        <!-- Content Planning-->
+        <section>
+          <header class="slide-header">Planning</header>
+          <section>
+            <h1>Content Discovery</h1>
+          </section>
+          <section>
+            <h1>Design Discovery</h1>
+          </section>
+          <section>
+            <h1>Architecture</h1>
+            <ul class="fragment">
+              <li>Pages</li>
+              <li>Content Types</li>
+              <li>Components</li>
+              <li>Blocks</li>
+              <li>Fields</li>
+            </ul>
+          </section>
+        </section>
+        <!-- Panels Overview-->
+        <section>
+          <header class="slide-header">Panels</header>
+          <section>
+            <h1>Dive In!</h1>
+          </section>
+          <section>
+            <h1>Page Manager</h1>
+          </section>
+          <section>
+            <h1></h1>
+            <div class="left">
+              <h3>Renderers</h3>
+              <p>Allow panels to intercept and override a path's display.</p>
+            </div>
+            <div class="left fragment">
+              <h3>Custom Pages</h3>
+              <p>Are panels pages such as the home page or custom landing pages.</p>
+            </div>
+            <div class="left fragment">
+              <h3>Variants</h3>
+              <p>Are ways for a renderer to display content in a layout.</p>
+            </div>
+          </section>
+          <!-- Inside Panels-->
+          <section>
+            <h1>Inside Panels</h1>
+          </section>
+          <section>
+            <h1></h1>
+            <div class="left">
+              <h3>Selection Rules</h3>
+              <p>Determine which variant is selected, top down.</p>
+            </div>
+            <div class="left fragment">
+              <h3>Contexts</h3>
+              <p>Expose and relate contextual data to the panels system.</p>
+            </div>
+            <div class="left fragment">
+              <h3>Layout</h3>
+              <p>Select a page layout for this variant.</p>
+            </div>
+            <div class="left fragment">
+              <h3>Content</h3>
+              <p>Add a variety of content to the variant.</p>
+            </div>
+          </section>
+          <!-- Configure a node variant-->
+          <section>
+            <h1>Try it Out!</h1>
+          </section>
+          <section>
+            <h1></h1>
+            <ol class="big">
+              <li>Enable the "node view" renderer and edit it.</li>
+              <li class="fragment">Add a variant.</li>
+              <li class="fragment">Create a selection rule for movies.</li>
+              <li class="fragment">Choose a layout.</li>
+              <li class="fragment">Add fields from the node to the content.</li>
+            </ol>
+          </section>
+        </section>
+        <!-- Build a VCP View-->
+        <section>
+          <header class="slide-header">Views Content Panes</header>
+          <section>
+            <h1>Enable</h1>
+            <ul class="big">
+              <li class="fragment">Views</li>
+              <li class="fragment">Views Content Panes (Under CTools)</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Create a New View</h1>
+            <ol class="big">
+              <li class="fragment">View of content, Movie Reviews</li>
+              <li class="fragment">No block or page</li>
+              <li class="fragment">Continue & Edit</li>
+            </ol>
+          </section>
+          <section>
+            <h1></h1>
+            <ol class="big">
+              <li>Add a display of type Content Pane</li>
+              <li class="fragment">Set a contextual filter relating to movies</li>
+              <li class="fragment">Set the Pane argument input to From Context, Content ID (under Node)</li>
+              <li class="fragment">Save</li>
+              <li class="fragment">Open panels UI, then Content</li>
+              <li class="fragment">From View Panes, add the new pane</li>
+            </ol>
+          </section>
+        </section>
+      </div>
+      <footer id="preso-footer"><span>Powered by Lullabot</span></footer>
+    </div>
+  </body>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+    { src: 'plugin/notes/notes.js', async: true }
+    ]
+    });
+  </script>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body {
+  background: #2f88e3 url("../images/tugboat.svg") 50% 50% no-repeat; }
+
+footer#preso-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: .5em 1em;
+  font-size: .5em; }
+
+.reveal section h2, .reveal section h3, .reveal section h4, .reveal section h5, .reveal section h6 {
+  color: #ffc511; }
+.reveal section p {
+  margin: 0 0 1em 0; }
+.reveal section img {
+  box-shadow: none; }
+.reveal section img.plain {
+  border: none;
+  margin: 0;
+  background: none; }
+.reveal section img.icon {
+  border: none;
+  margin: 0 1em 0 0;
+  background: none;
+  height: 50px;
+  vertical-align: middle; }
+  .reveal section img.icon.med {
+    height: 100px; }
+.reveal section ul.none li {
+  list-style: none;
+  padding: .5em 0; }
+.reveal section div.left {
+  text-align: left; }
+.reveal section ol, .reveal section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .reveal section ol li, .reveal section ul li {
+    padding: .25em 0; }
+    .reveal section ol li:before, .reveal section ul li:before {
+      color: #ffc511;
+      font-weight: bold;
+      width: 2em;
+      margin-left: -2em;
+      display: inline-block; }
+  .reveal section ol.big li, .reveal section ul.big li {
+    font-size: 1.5em; }
+.reveal section ol {
+  counter-reset: custom-counter; }
+  .reveal section ol li:before {
+    content: counter(custom-counter,upper-roman) ".";
+    counter-increment: custom-counter; }
+.reveal section ul:not(.none) li:before {
+  content: "★"; }
+.reveal section .highlight {
+  color: #ffc511; }

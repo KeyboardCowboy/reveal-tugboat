@@ -1,0 +1,103 @@
+$color-pri: #fff;
+$color-sec: rgb(255, 197, 17);
+$color-bg: #2f88e3;
+
+body {
+  background: $color-bg url('../images/tugboat.svg') 50% 50% no-repeat;
+}
+
+footer#preso-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: .5em 1em;
+  font-size: .5em;
+}
+
+.reveal {
+  section {
+    h2, h3, h4, h5, h6 {
+      color: $color-sec;
+    }
+
+    p {
+      margin: 0 0 1em 0;
+    }
+
+    img {
+      box-shadow: none;
+    }
+
+    img.plain {
+      border: none;
+      margin: 0;
+      background: none;
+    }
+
+    img.icon {
+      border: none;
+      margin: 0 1em 0 0;
+      background: none;
+      height: 50px;
+      vertical-align: middle;
+
+      &.med {
+        height: 100px;
+      }
+    }
+
+    ul.none li {
+      list-style: none;
+      padding: .5em 0;
+    }
+
+    div.left {
+      text-align: left;
+    }
+
+    ol, ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding: .25em 0;
+
+        &:before {
+          color: $color-sec;
+          font-weight: bold;
+          width: 2em;
+          margin-left: -2em;
+          display: inline-block;
+        }
+      }
+
+      &.big {
+        li {
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    ol {
+      counter-reset: custom-counter;
+
+      li:before {
+        content: counter(custom-counter, upper-roman) ".";
+        counter-increment: custom-counter;
+      }
+    }
+
+    ul {
+      &:not(.none) {
+        li:before {
+          content: "★";
+        }
+      }
+    }
+
+    .highlight {
+      color: $color-sec;
+    }
+  }
+}

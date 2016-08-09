@@ -1,0 +1,109 @@
+include ./includes/_slide
+
+doctype html
+html(lang="en")
+  include ./includes/_head
+  body
+    .reveal
+      .slides
+        // Intro
+        +group()
+          section
+            h1 Tug Your Site
+            h1 Into CI
+            hr
+            h2 With Tugboat
+
+          section
+            h1
+              img(data-src="images/lullabot_128.png").plain
+              | Lullabot
+            img(data-src="images/lullabot.jpg")
+            p.fragment.fade-in Strategy // Design // Development
+            small.fragment.fade-in We create digital experiences for the world's best brands.
+
+          +slide("Chris Albrecht")
+            h2 Developer
+            hr
+            ul.none
+              li
+                img(src="images/icons/SVG/mail.svg").icon
+                | chris@lullabot.com
+              li
+                img(src="images/icons/SVG/twitter.svg").icon
+                | @ChrisAlbrecht
+              li
+                img(src="images/icons/SVG/drupal.svg").icon
+                | drupal.org/u/KeyboardCowboy
+
+        +group()
+          +slide("The Tour")
+            ul
+              li.fragment What is CI?
+              li.fragment Typical Development Workflow
+              li.fragment Drupal's Difficulties
+              li.fragment Lullabot's Process
+              li.fragment Tugboat to the Rescue
+
+        +group("What is Continuous Integration (CI)?")
+          +slide("Definition")
+            p Merging multiple development lines of code into a mainline on a daily basis.
+            p A DAILY BASIS?!
+            p More of an approach to rapid development
+
+          +slide("Tools & Services")
+            p
+              img(src="images/jenkins.png").icon.med
+              | Jenkins
+            p
+              img(src="images/travis.png").icon.med
+              | Travis CI
+            p
+              img(src="images/circleci.png").icon.med
+              | Circle CI
+
+          +slide("Not Really CI")
+            p "Frequent Integration"
+            p "Continuous Delivery"
+            p Rapid Deployment
+            p Ensure the mainline is always in a deployable state
+
+        +group("Development Ecosystem")
+          +slide("Simple Setup")
+            ul
+              li.fragment Local or Dev
+              li.fragment Staging or Testing
+              li.fragment Production
+            hr
+            ul
+              li.fragment Less overhead
+              li.fragment Higher risk
+              li.fragment Quicker deployments
+
+          +slide("Advanced Setup")
+            ul
+              li.fragment Local
+              li.fragment Dev or Integration
+              li.fragment QA
+              li.fragment Stage/Test/UAT
+              li.fragment Production
+            hr
+            ul
+              li.fragment More overhead
+              li.fragment Less risk
+              li.fragment Slower deployments
+
+          +slide("Drupal")
+            ul
+              li.fragment PHP, MySQL, Apache/NGINX
+              li.fragment Admin UI for Developers AND End Users
+              li.fragment In D7, Content & Config in DB
+              li.fragment Large volume of code with lots of working parts
+
+
+
+
+      footer#preso-footer
+        span Powered by Lullabot
+
+  include ./includes/_closing

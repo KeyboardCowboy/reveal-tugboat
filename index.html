@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tug Your Site into CI with Tugboat</title>
+    <meta name="description" content="Presentation Description">
+    <meta name="author" content="KeyboardCowboy (Chris Albrecht), chris@lullabot.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Intro-->
+        <section>
+          <header class="slide-header"></header>
+          <section>
+            <h1>Tug Your Site</h1>
+            <h1>Into CI</h1>
+            <hr>
+            <h2>With Tugboat</h2>
+          </section>
+          <section>
+            <h1><img data-src="images/lullabot_128.png" class="plain">Lullabot</h1><img data-src="images/lullabot.jpg">
+            <p class="fragment fade-in">Strategy // Design // Development</p><small class="fragment fade-in">We create digital experiences for the world's best brands.</small>
+          </section>
+          <section>
+            <h1>Chris Albrecht</h1>
+            <h2>Developer</h2>
+            <hr>
+            <ul class="none">
+              <li><img src="images/icons/SVG/mail.svg" class="icon">chris@lullabot.com</li>
+              <li><img src="images/icons/SVG/twitter.svg" class="icon">@ChrisAlbrecht</li>
+              <li><img src="images/icons/SVG/drupal.svg" class="icon">drupal.org/u/KeyboardCowboy</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <header class="slide-header"></header>
+          <section>
+            <h1>The Tour</h1>
+            <ul>
+              <li class="fragment">What is CI?</li>
+              <li class="fragment">Typical Development Workflow</li>
+              <li class="fragment">Drupal's Difficulties</li>
+              <li class="fragment">Lullabot's Process</li>
+              <li class="fragment">Tugboat to the Rescue</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <header class="slide-header">What is Continuous Integration (CI)?</header>
+          <section>
+            <h1>Definition</h1>
+            <p>Merging multiple development lines of code into a mainline on a daily basis.</p>
+            <p>A DAILY BASIS?!</p>
+            <p>More of an approach to rapid development</p>
+          </section>
+          <section>
+            <h1>Tools &amp; Services</h1>
+            <p><img src="images/jenkins.png" class="icon med">Jenkins</p>
+            <p><img src="images/travis.png" class="icon med">Travis CI</p>
+            <p><img src="images/circleci.png" class="icon med">Circle CI</p>
+          </section>
+          <section>
+            <h1>Not Really CI</h1>
+            <p>"Frequent Integration"</p>
+            <p>"Continuous Delivery"</p>
+            <p>Rapid Deployment</p>
+            <p>Ensure the mainline is always in a deployable state</p>
+          </section>
+        </section>
+        <section>
+          <header class="slide-header">Development Ecosystem</header>
+          <section>
+            <h1>Simple Setup</h1>
+            <ul>
+              <li class="fragment">Local or Dev</li>
+              <li class="fragment">Staging or Testing</li>
+              <li class="fragment">Production</li>
+            </ul>
+            <hr>
+            <ul>
+              <li class="fragment">Less overhead</li>
+              <li class="fragment">Higher risk</li>
+              <li class="fragment">Quicker deployments</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Advanced Setup</h1>
+            <ul>
+              <li class="fragment">Local</li>
+              <li class="fragment">Dev or Integration</li>
+              <li class="fragment">QA</li>
+              <li class="fragment">Stage/Test/UAT</li>
+              <li class="fragment">Production</li>
+            </ul>
+            <hr>
+            <ul>
+              <li class="fragment">More overhead</li>
+              <li class="fragment">Less risk</li>
+              <li class="fragment">Slower deployments</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Drupal</h1>
+            <ul>
+              <li class="fragment">PHP, MySQL, Apache/NGINX</li>
+              <li class="fragment">Admin UI for Developers AND End Users</li>
+              <li class="fragment">In D7, Content & Config in DB</li>
+              <li class="fragment">Large volume of code with lots of working parts</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+      <footer id="preso-footer"><span>Powered by Lullabot</span></footer>
+    </div>
+  </body>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+    { src: 'plugin/notes/notes.js', async: true }
+    ]
+    });
+  </script>
+</html>
