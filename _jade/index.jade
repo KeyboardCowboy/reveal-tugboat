@@ -100,7 +100,113 @@ html(lang="en")
               li.fragment In D7, Content & Config in DB
               li.fragment Large volume of code with lots of working parts
 
+        +group("Our Process")
+          +slide("Config in Code")
+            p Extensive use of Features in D7
+            p D8 Config Management
+          +slide("Disable UI Modules")
+            ul
+              li Field UI
+              li Views UI
+              li Rules Admin
+          +slide("All Config in Dev")
+            ul
+              li Features
+              li Update hooks
+              li Custom modules
+          +slide("Peer Review")
+            ul
+              li GitHub Pull Request Workflow
+              li Separate QA and UAT
+            p Each adds time to deployment
 
+        +group("Pain Points")
+          +slide("Testing Install Processes")
+            ul
+              li "It worked on my Local!"
+              li Is your DB up to date?
+              li Local config vs Prod config
+              li What if the deployment fails?
+              li How many developers committed to the deployment?
+          +slide("Epic Tickets")
+            ul
+              li Showing progress updates
+              li Multiple developers pushing code to one server
+              li Testing on actual mobile devices
+          +slide("StakeHolders")
+            ul
+              li Can't show designers implemented designs
+              li Difficult to articulate interaction flaws
+              li "Why is this taking so long?"
+              li Hope it all comes out right
+
+        +group("What We Did")
+          +slide("Listen for PRs")
+          +slide("Fully Functional Site")
+          +slide("Sharable URL")
+
+        +group("Problems Solved")
+          +slide("Push and Forget")
+            ul
+             li Automated builds
+             li Comments success/failures
+             li Work on your next ticket
+          +slide("Clean Locals")
+            ul
+              li Don't checkout other feature branches
+              li No local code conflicts
+              li Keep local database clean
+          +slide("Fast DB Resets")
+            ul
+              li Tugboat DBs reset FAST
+              li Test installation processes
+          +slide("Configuration mimics PROD")
+            ul
+              li More accurate representation
+              li Catch errors early in the process
+          +slide("Prevents Conflict")
+            ul
+              li Full site for every ticket
+              li Easily support multiple devs
+          +slide("Show Stakeholders")
+            ul
+              li Real URLs
+              li Prod + Your Ticket
+              li Log in, test features/fixes
+          +slide("In Summary")
+            ul
+              li Less time resetting, more time developing
+              li Less risk of merge conflict
+              li More accurate testing conditions
+              li Iterative feedback
+
+              p FASTER, CLEANER DEVELOPMENT
+
+        +group("There's More!")
+          +slide("Integration")
+            ul
+              li GitHub
+              li BitBucket
+              li More coming soon
+          +slide("Versatility")
+            ul
+              li Regular Drupal
+              li Multisite Drupal
+              li Any linux-based system
+          +slide("UI Tools")
+            ul
+              li Summary Overview
+              li Terminals
+              li Logging
+              li Reset/Rebuild
+              li Locking Builds
+              li Kill Environments
+          +slide("Plugins")
+            ul
+              li Email Notifications
+              li Redeploy
+              li Test Suite
+              li Visual Diffs
 
 
       footer#preso-footer

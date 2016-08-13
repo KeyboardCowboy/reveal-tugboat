@@ -33,7 +33,7 @@ footer#preso-footer {
 .reveal section div.left {
   text-align: left; }
 .reveal section ol, .reveal section ul {
-  margin: 0;
+  margin: 0 0 1em 0;
   padding: 0;
   list-style: none; }
   .reveal section ol li, .reveal section ul li {
