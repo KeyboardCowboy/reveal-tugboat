@@ -72,6 +72,15 @@ footer#preso-footer {
         }
       }
 
+      &.fragments {
+        li {
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+        }
+      }
+
       &.big {
         li {
           font-size: 1.5em;
@@ -99,5 +108,68 @@ footer#preso-footer {
     .highlight {
       color: $color-sec;
     }
+
+    .footnote {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      font-size: .6em;
+      font-style: italic;
+      opacity: .75;
+    }
+
+    .question {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: transparent url('../images/thinking.png') 50% 50% no-repeat;
+      width: 75px;
+      height: 75px;
+      background-size: contain;
+
+      p {
+        position: absolute;
+        top: 100px;
+        font-size: .65em;
+        text-align: left;
+        background-color: white;
+        color: black;
+        padding: 1em;
+        border-radius: .5em;
+        left: 0;
+        width: 300%;
+        opacity: 0;
+        transition: .2s opacity ease-out;
+        box-shadow: 2px 2px 5px rgba(black, .3);
+      }
+
+      &:hover {
+        p {
+          opacity: .8;
+        }
+      }
+    }
+
+    .left-gutter {
+      margin-left: 2em;
+    }
+
+    .center {
+      text-align: center;
+    }
+  }
+}
+
+.left {
+  float: left;
+  max-width: 50%;
+}
+.right {float: right;}
+.clear {clear: both;}
+
+.left, .right {
+  img {
+    width: 100%;
+    height: auto;
   }
 }

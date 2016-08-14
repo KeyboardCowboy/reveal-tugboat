@@ -34,7 +34,7 @@
           </section>
           <section>
             <h1><img data-src="images/lullabot_128.png" class="plain">Lullabot</h1><img data-src="images/lullabot.jpg">
-            <p class="fragment fade-in">Strategy // Design // Development</p><small class="fragment fade-in">We create digital experiences for the world's best brands.</small>
+            <p>Strategy // Design // Development</p><small>We create digital experiences for the world's best brands.</small>
           </section>
           <section>
             <h1>Chris Albrecht</h1>
@@ -57,6 +57,8 @@
               <li class="fragment">Drupal's Difficulties</li>
               <li class="fragment">Lullabot's Process</li>
               <li class="fragment">Tugboat to the Rescue</li>
+              <li class="fragment">Demo?</li>
+              <li class="fragment">Q&A?</li>
             </ul>
           </section>
         </section>
@@ -65,8 +67,8 @@
           <section>
             <h1>Definition</h1>
             <p>Merging multiple development lines of code into a mainline on a daily basis.</p>
-            <p>A DAILY BASIS?!</p>
-            <p>More of an approach to rapid development</p>
+            <p class="fragment">A DAILY BASIS?!</p>
+            <p class="fragment">More of an approach to rapid development</p>
           </section>
           <section>
             <h1>Tools &amp; Services</h1>
@@ -76,10 +78,10 @@
           </section>
           <section>
             <h1>Not Really CI</h1>
-            <p>"Frequent Integration"</p>
-            <p>"Continuous Delivery"</p>
-            <p>Rapid Deployment</p>
-            <p>Ensure the mainline is always in a deployable state</p>
+            <p class="fragment">"Frequent Integration"</p>
+            <p class="fragment">"Continuous Delivery"</p>
+            <p class="fragment">Rapid Deployment</p>
+            <p class="fragment">Ensure the mainline is always in a deployable state</p>
           </section>
         </section>
         <section>
@@ -91,7 +93,7 @@
               <li class="fragment">Staging or Testing</li>
               <li class="fragment">Production</li>
             </ul>
-            <hr>
+            <hr class="fragment">
             <ul>
               <li class="fragment">Less overhead</li>
               <li class="fragment">Higher risk</li>
@@ -107,7 +109,7 @@
               <li class="fragment">Stage/Test/UAT</li>
               <li class="fragment">Production</li>
             </ul>
-            <hr>
+            <hr class="fragment">
             <ul>
               <li class="fragment">More overhead</li>
               <li class="fragment">Less risk</li>
@@ -116,11 +118,16 @@
           </section>
           <section>
             <h1>Drupal</h1>
+            <div class="question">
+              <p>What is the most frustrating part of building a site in Drupal?</p>
+            </div>
             <ul>
               <li class="fragment">PHP, MySQL, Apache/NGINX</li>
               <li class="fragment">Admin UI for Developers AND End Users</li>
               <li class="fragment">In D7, Content & Config in DB</li>
               <li class="fragment">Large volume of code with lots of working parts</li>
+              <li class="fragment">Multiple ways to accomplish one thing</li><br>
+              <h3 class="fragment center">How do you manage it?</h3>
             </ul>
           </section>
         </section>
@@ -128,12 +135,12 @@
           <header class="slide-header">Our Process</header>
           <section>
             <h1>Config in Code</h1>
-            <p>Extensive use of Features in D7</p>
-            <p>D8 Config Management</p>
+            <p class="fragment">Extensive use of Features in D7</p>
+            <p class="fragment">D8 Config Management</p>
           </section>
           <section>
             <h1>Disable UI Modules</h1>
-            <ul>
+            <ul class="fragment">
               <li>Field UI</li>
               <li>Views UI</li>
               <li>Rules Admin</li>
@@ -141,53 +148,74 @@
           </section>
           <section>
             <h1>All Config in Dev</h1>
-            <ul>
+            <ul class="fragment">
               <li>Features</li>
               <li>Update hooks</li>
               <li>Custom modules</li>
             </ul>
           </section>
           <section>
-            <h1>Peer Review</h1>
+            <h1>Extensive Review*</h1>
+            <div class="question">
+              <p>What’s the worst thing that can happen in your client’s eyes?</p>
+            </div>
             <ul>
-              <li>GitHub Pull Request Workflow</li>
-              <li>Separate QA and UAT</li>
+              <li class="fragment">GitHub Pull Request Workflow</li>
+              <li class="fragment">Peer Review</li>
+              <li class="fragment">QA</li>
+              <li class="fragment">UAT</li>
             </ul>
-            <p>Each adds time to deployment</p>
+            <h3 class="fragment">Each adds time to deployment</h3>
+            <div class="footnote">*Depends on client</div>
           </section>
         </section>
         <section>
           <header class="slide-header">Pain Points</header>
           <section>
             <h1>Testing Install Processes</h1>
+            <div class="question">
+              <p>What’s the largest database you’ve had to work with?</p>
+            </div>
             <ul>
-              <li>"It worked on my Local!"</li>
-              <li>Is your DB up to date?</li>
-              <li>Local config vs Prod config</li>
-              <li>What if the deployment fails?</li>
-              <li>How many developers committed to the deployment?</li>
+              <li class="fragment">"It worked on my Local!"</li>
+              <li class="fragment">"How recent is your DB?"</li>
+              <li class="fragment">"Do you have X running?"</li>
+              <li class="fragment">"What if the deployment fails?"</li>
             </ul>
           </section>
           <section>
             <h1>Epic Tickets</h1>
             <ul>
-              <li>Showing progress updates</li>
-              <li>Multiple developers pushing code to one server</li>
-              <li>Testing on actual mobile devices</li>
+              <li class="fragment">Showing progress updates</li>
+              <li class="fragment">Multiple developers pushing code to one server</li>
+              <li class="fragment">Testing/debugging on actual mobile devices</li>
             </ul>
           </section>
           <section>
-            <h1>StakeHolders</h1>
-            <ul>
-              <li>Can't show designers implemented designs</li>
-              <li>Difficult to articulate interaction flaws</li>
-              <li>"Why is this taking so long?"</li>
-              <li>Hope it all comes out right</li>
+            <h1>Steak Holders</h1><img src="http://mentalfloss.com/sites/default/legacy/blogs/wp-content/uploads/2009/11/Barney-Rubble-Steak-240x300.jpg" class="center">
+          </section>
+          <section>
+            <h1>Stakeholders</h1>
+            <div class="left"><img src="/images/oatmeal1.png"></div>
+            <ul class="left-gutter">
+              <li class="fragment">Designers<br><small>"This doesn't work on my phone. Change it."</small></li>
+              <li class="fragment">Marketing<br><small>"Why are the ads below the fold? Change it."</small></li>
+              <li class="fragment">SEO<br><small>"AJAX content isn't being indexed. Change it."</small></li>
+              <li class="fragment">Management<br><small>"They said pie but meant cake. Change it."</small></li>
+              <li class="fragment">CEO<br><small>"Make the cake-pie design POP! It needs sizzle."</small></li>
             </ul>
+            <div class="footnote">http://theoatmeal.com/comics/design_hell</div>
+          </section>
+          <section>
+            <h1>Stakeholders</h1>
+            <h3>Wouldn't it be great if we could avoid this?</h3><img src="/images/software_engineering.png" class="center">
           </section>
         </section>
         <section>
-          <header class="slide-header">What We Did</header>
+          <header class="slide-header">We Built Tugboat</header>
+          <section>
+            <h1>Tugboat</h1><img src="/images/tugboat_overview.png" class="center">
+          </section>
           <section>
             <h1>Listen for PRs</h1>
           </section>
@@ -197,62 +225,68 @@
           <section>
             <h1>Sharable URL</h1>
           </section>
+          <section>
+            <h1>Super Fast Builds</h1>
+          </section>
         </section>
         <section>
           <header class="slide-header">Problems Solved</header>
           <section>
             <h1>Push and Forget</h1>
             <ul>
-              <li>Automated builds</li>
-              <li>Comments success/failures</li>
-              <li>Work on your next ticket</li>
+              <li class="fragment">Automated builds</li>
+              <li class="fragment">Comments success/failures</li>
+              <li class="fragment">Work on your next ticket</li>
             </ul>
           </section>
           <section>
             <h1>Clean Locals</h1>
             <ul>
-              <li>Don't checkout other feature branches</li>
-              <li>No local code conflicts</li>
-              <li>Keep local database clean</li>
+              <li class="fragment">Don't checkout other feature branches</li>
+              <li class="fragment">No local code conflicts</li>
+              <li class="fragment">Keep local database clean</li>
             </ul>
           </section>
           <section>
             <h1>Fast DB Resets</h1>
             <ul>
-              <li>Tugboat DBs reset FAST</li>
-              <li>Test installation processes</li>
+              <li class="fragment">Tugboat DBs reset FAST</li>
+              <li class="fragment">Test installation processes</li>
             </ul>
           </section>
           <section>
             <h1>Configuration mimics PROD</h1>
             <ul>
-              <li>More accurate representation</li>
-              <li>Catch errors early in the process</li>
+              <li class="fragment">More accurate representation</li>
+              <li class="fragment">Catch errors early in the process</li>
             </ul>
           </section>
           <section>
             <h1>Prevents Conflict</h1>
             <ul>
-              <li>Full site for every ticket</li>
-              <li>Easily support multiple devs</li>
+              <li class="fragment">Full site for every ticket</li>
+              <li class="fragment">Easily support multiple devs</li>
             </ul>
           </section>
           <section>
             <h1>Show Stakeholders</h1>
+            <div class="question">
+              <p>On which server are your stakeholders usually finding bugs?</p>
+            </div>
             <ul>
-              <li>Real URLs</li>
-              <li>Prod + Your Ticket</li>
-              <li>Log in, test features/fixes</li>
+              <li class="fragment">Real URLs</li>
+              <li class="fragment">Prod + Your Ticket</li>
+              <li class="fragment">Log in, test features/fixes</li>
             </ul>
           </section>
           <section>
             <h1>In Summary</h1>
             <ul>
-              <li>Less time resetting, more time developing</li>
-              <li>Less risk of merge conflict</li>
-              <li>More accurate testing conditions</li>
-              <li>Iterative feedback</li>
-              <p>FASTER, CLEANER DEVELOPMENT</p>
+              <li class="fragment">Less time resetting, more time developing</li>
+              <li class="fragment">Less risk of merge conflict</li>
+              <li class="fragment">More accurate testing conditions</li>
+              <li class="fragment">Iterative feedback</li><br>
+              <h2 class="fragment center">FASTER, CLEANER DEVELOPMENT</h2>
             </ul>
           </section>
         </section>
@@ -260,7 +294,7 @@
           <header class="slide-header">There's More!</header>
           <section>
             <h1>Integration</h1>
-            <ul>
+            <ul class="fragment">
               <li>GitHub</li>
               <li>BitBucket</li>
               <li>More coming soon</li>
@@ -268,7 +302,7 @@
           </section>
           <section>
             <h1>Versatility</h1>
-            <ul>
+            <ul class="fragment">
               <li>Regular Drupal</li>
               <li>Multisite Drupal</li>
               <li>Any linux-based system</li>
@@ -276,7 +310,7 @@
           </section>
           <section>
             <h1>UI Tools</h1>
-            <ul>
+            <ul class="fragment">
               <li>Summary Overview</li>
               <li>Terminals</li>
               <li>Logging</li>
@@ -288,11 +322,15 @@
           <section>
             <h1>Plugins</h1>
             <ul>
-              <li>Email Notifications</li>
-              <li>Redeploy</li>
-              <li>Test Suite</li>
-              <li>Visual Diffs</li>
+              <li class="fragment">Email Notifications</li>
+              <li class="fragment">Redeploy</li>
+              <li class="fragment">Test Suite</li>
+              <li class="fragment">Visual Diffs</li>
             </ul>
+          </section>
+          <section>
+            <h1 class="fragment shrink">Demo?</h1>
+            <h1 class="fragment fade-in">DEMO!</h1>
           </section>
         </section>
       </div>

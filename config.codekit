@@ -625,6 +625,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/oatmeal1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69528,
+		"inputAbbreviatedPath": "\/images\/oatmeal1.png",
+		"outputAbbreviatedPath": "\/images\/oatmeal1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/software_engineering.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 776053,
+		"inputAbbreviatedPath": "\/images\/software_engineering.png",
+		"outputAbbreviatedPath": "\/images\/software_engineering.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/thinking.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86154,
+		"inputAbbreviatedPath": "\/images\/thinking.png",
+		"outputAbbreviatedPath": "\/images\/thinking.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/travis.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -632,6 +665,17 @@
 		"initialSize": 45667,
 		"inputAbbreviatedPath": "\/images\/travis.png",
 		"outputAbbreviatedPath": "\/images\/travis.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tugboat_overview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 363017,
+		"inputAbbreviatedPath": "\/images\/tugboat_overview.png",
+		"outputAbbreviatedPath": "\/images\/tugboat_overview.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

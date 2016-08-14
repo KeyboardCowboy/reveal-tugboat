@@ -44,6 +44,11 @@ footer#preso-footer {
       width: 2em;
       margin-left: -2em;
       display: inline-block; }
+  .reveal section ol.fragments li, .reveal section ul.fragments li {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .reveal section ol.big li, .reveal section ul.big li {
     font-size: 1.5em; }
 .reveal section ol {
@@ -55,3 +60,53 @@ footer#preso-footer {
   content: "★"; }
 .reveal section .highlight {
   color: #ffc511; }
+.reveal section .footnote {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: .6em;
+  font-style: italic;
+  opacity: .75; }
+.reveal section .question {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent url("../images/thinking.png") 50% 50% no-repeat;
+  width: 75px;
+  height: 75px;
+  background-size: contain; }
+  .reveal section .question p {
+    position: absolute;
+    top: 100px;
+    font-size: .65em;
+    text-align: left;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border-radius: .5em;
+    left: 0;
+    width: 300%;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-out;
+    transition: .2s opacity ease-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }
+  .reveal section .question:hover p {
+    opacity: .8; }
+.reveal section .left-gutter {
+  margin-left: 2em; }
+.reveal section .center {
+  text-align: center; }
+
+.left {
+  float: left;
+  max-width: 50%; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.left img, .right img {
+  width: 100%;
+  height: auto; }
